@@ -1,0 +1,9 @@
+.guess-row-result {
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.guess-row-result-row {
+  display: flex;
+}

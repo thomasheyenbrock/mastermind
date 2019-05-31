@@ -1,0 +1,11 @@
+body {
+  margin: 0;
+  font-size: 18px;
+  font-family: sans-serif;
+  background-color: #ecebe4;
+  min-height: 100vh;
+}
+
+p {
+  margin: 0;
+}

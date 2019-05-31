@@ -1,0 +1,13 @@
+.counter-container {
+  display: flex;
+}
+
+.counter-value {
+  border-top: 1px solid #6d6c69;
+  border-bottom: 1px solid #6d6c69;
+  background-color: #ecebe4;
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

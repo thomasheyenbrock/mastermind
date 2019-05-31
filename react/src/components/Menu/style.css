@@ -1,0 +1,16 @@
+.menu {
+  border: 2px solid #424240;
+  background-color: #c2c1bb;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.menu > * + * {
+  margin-top: 16px;
+}
+
+.divider {
+  border-top: 1px solid #424240;
+}
