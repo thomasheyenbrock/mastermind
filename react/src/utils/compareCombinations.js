@@ -1,4 +1,4 @@
-export const compareCombination = (originalGuess, originalExpected) => {
+export const compareCombinations = (originalGuess, originalExpected) => {
   let guess = [...originalGuess];
   let expected = [...originalExpected];
   const result = [];

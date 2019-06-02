@@ -1,6 +1,6 @@
 import React, { useReducer, useState } from "react";
 
-import { compareCombination } from "../../utils/compareCombinations";
+import { compareCombinations } from "../../utils/compareCombinations";
 import { createGame } from "../../utils/createGame";
 import { Game } from "../Game";
 import { Menu } from "../Menu";
@@ -44,7 +44,7 @@ const reducer = (state, action) => {
       if (hasLost) {
         alert("Oh no! You couldn't find the correct combination.");
       }
-      const result = compareCombination(state.nextGuess, state.combination);
+      const result = compareCombinations(state.nextGuess, state.combination);
       const guesses = [
         ...state.guesses,
         {
@@ -61,7 +61,7 @@ const reducer = (state, action) => {
           guesses.every(guess =>
             arrayEqual(
               guess.result,
-              compareCombination(guess.colors, combination)
+              compareCombinations(guess.colors, combination)
             )
           )
         ),
