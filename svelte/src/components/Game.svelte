@@ -66,7 +66,7 @@
   <div class="guess-row fixed-height">
     <div class={`guess-row-colors ${$game.isFinished ? '' : 'hidden'}`}>
       {#if $game.isFinished}
-        {#each $game.combination as color (color)}
+        {#each $game.combination as color}
           <Color {color} />
         {/each}
       {:else}
@@ -102,7 +102,7 @@
       <Result result={$game.nextGuess.map(() => null)} />
     </div>
   {/each}
-  {#each [...$game.guesses].reverse() as guess, index (guess)}
+  {#each [...$game.guesses].reverse() as guess, index}
     <div class="guess-row">
       <div class="guess-row-colors">
         {#each guess.colors as color}
