@@ -4,9 +4,15 @@
   import { dispatch, game } from "./store";
   import { createGame } from "../utils/createGame";
 
-  export let lengthOfCombination;
-  export let numberOfColors;
-  export let numberOfGuesses;
+  import {
+    lengthOfCombination as initialLengthOfCombination,
+    numberOfColors as initialNumberOfColors,
+    numberOfGuesses as initialNumberOfGuesses
+  } from "../utils/initialState";
+
+  let lengthOfCombination = initialLengthOfCombination;
+  let numberOfColors = initialNumberOfColors;
+  let numberOfGuesses = initialNumberOfGuesses;
 </script>
 
 <style>

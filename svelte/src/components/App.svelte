@@ -1,15 +1,6 @@
 <script>
   import Game from "./Game.svelte";
   import Menu from "./Menu.svelte";
-  import {
-    lengthOfCombination as initialLengthOfCombination,
-    numberOfColors as initialNumberOfColors,
-    numberOfGuesses as initialNumberOfGuesses
-  } from "../utils/initialState";
-
-  let lengthOfCombination = initialLengthOfCombination;
-  let numberOfColors = initialNumberOfColors;
-  let numberOfGuesses = initialNumberOfGuesses;
 </script>
 
 <style>
@@ -22,6 +13,6 @@
 </style>
 
 <div class="container">
-  <Menu {lengthOfCombination} {numberOfColors} {numberOfGuesses} />
+  <Menu />
   <Game />
 </div>
