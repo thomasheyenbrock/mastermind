@@ -1,0 +1,53 @@
+<script>
+  export let color = "";
+  export let isSelected = false;
+  export let isClickable = false;
+</script>
+
+<style>
+  .color {
+    border-radius: 50%;
+    height: 32px;
+    width: 32px;
+    border: 2px solid #424240;
+    background-color: #c2c1bb;
+  }
+
+  .color.selected {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 10px black);
+  }
+
+  .color.blue {
+    background-color: #2776d1;
+  }
+  .color.green {
+    background-color: #3bd368;
+  }
+  .color.yellow {
+    background-color: #fff760;
+  }
+  .color.red {
+    background-color: #ff3243;
+  }
+  .color.black {
+    background-color: #000000;
+  }
+  .color.white {
+    background-color: #ffffff;
+  }
+  .color.purple {
+    background-color: #9817c6;
+  }
+  .color.grey {
+    background-color: #6d6c69;
+  }
+
+  .clickable {
+    cursor: pointer;
+  }
+</style>
+
+<span
+  on:click
+  class={`color ${color} ${isClickable ? 'clickable' : ''} ${isSelected ? 'selected' : ''}`} />
