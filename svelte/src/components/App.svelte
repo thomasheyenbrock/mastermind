@@ -1,7 +1,6 @@
 <script>
   import Game from "./Game.svelte";
   import Menu from "./Menu.svelte";
-  import { compareCombination } from "../utils/compareCombinations";
   import {
     lengthOfCombination as initialLengthOfCombination,
     numberOfColors as initialNumberOfColors,
